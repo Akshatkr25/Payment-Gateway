@@ -21,3 +21,9 @@
 /* #sub{
     text-align: left;
 } */
+#home{
+    height: 40px;
+    margin-block-start: -20px;
+    margin-left: 910px;
+    position: fixed;
+}
