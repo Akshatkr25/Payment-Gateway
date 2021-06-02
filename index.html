@@ -1,29 +1,102 @@
-#para{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-#heading{
-    text-decoration: underline;
-    font-weight: 600;
-}
-#para:hover{
-    color: goldenrod;
-}
-#title{
-    font-family:'Times New Roman', Times, serif ;
-}
-#title:hover{
-    color: orangered;
-}
-#about{
-    margin:auto; 
-    font-family: ui-sans-serif; 
-}
-/* #sub{
-    text-align: left;
-} */
-#home{
-    height: 40px;
-    margin-block-start: -20px;
-    margin-left: 910px;
-    position: fixed;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/png" href="diakonisches-werk.ico">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Payment gateway</title>
+</head>
+
+<body>
+
+  <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">The Shunshine Kids</span>
+          </a>
+          <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
+            <a href="/index.html" class="mr-5 hover:text-white" id="heading" > <img id="home" src="Images\home.webp" alt="HOME"></a>
+            <a href="#about" class="mr-5 hover:text-white" id="heading">ABOUT</a>
+          </nav>
+          <!-- <button class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Button
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7"></path>
+            </svg>
+          </button> -->
+        </div>
+      </header>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+            <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" id="title">"Giving is not about making a donation"
+              <br class="hidden lg:inline-block" >"It is about makking a diffrence"
+            </h1>
+            <p class="mb-8 leading-relaxed" id="para">We think sometimes that poverty is only being hungry, naked and homeless. The poverty of being unwanted, unloved and uncared for is the greatest poverty.
+                <br> Let's Unite To Fight Poverty And Make Future Bright
+            </p>
+            <div class="flex justify-center">
+              <button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"><form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HHoNu19vzHoiTv" async> </script> </form></button>
+            </div>
+          </div>
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+            <img class="object-cover object-center rounded" alt="hero" src="https://images.unsplash.com/photo-1594708767771-a7502209ff51?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cG92ZXJ0eSUyMGluJTIwaW5kaWF8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+          </div>
+        </div>
+      </section>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-5xl text-3xl text-white">1 in 3
+                </h2>
+              <p class="leading-relaxed">CHILDREN WORLDWIDE <br>  live in poverty</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-5xl text-3xl text-white">50%
+               </h2>
+              <p class="leading-relaxed"> OF PEOPLE <br>
+                living on less than $1.90 a day are children</p>
+            </div>
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-medium sm:text-5xl text-4xl text-white">15,000
+               </h2>
+              <p class="leading-relaxed"> CHILDREN UNDER THE AGE OF 5 <br>
+                die each day</p>
+            </div>
+            
+            <div class="p-4 sm:w-1/4 w-1/2">
+              <h2 class="title-font font-small sm:text-5xl text-4xl text-white">
+               </h2>
+            <br>  <p class="leading-relaxed" style="font-weight: 700; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ; font-size: x-large; color: ivory;"><b> SOURCE : UNICEF </b>
+                </p>
+            </div> 
+            
+           </div>
+        </div>
+           
+      </section>
+
+      <hr>
+
+      <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap flex-col">
+          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white" id="about">ABOUT US
+             
+          <img class="xl:w-1/4 lg:w-1/3 md:w-1/2 w-2/3 block mx-auto mb-10 object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/collection/10980623/720x600">
+          <div class="flex flex-col text-center w-full">
+            <h1 class="text-xl font-medium title-font mb-4 text-white">TSK- The Shunshine Kids</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base" id="para">We here at TSK  working to transform the hopes and happiness of young people facing poverty, malnutrition and health issue. We support them through their most serious life challenges and we campaign tirelessly for the big social changes that will improve the lives of those who need hope most. We've been doing this for 100+ years and we won't stop until we've built a society where hope is alive in every child.</p>
+          </div>
+        </div>
+      </section>
+            
+</body>
+</html>
